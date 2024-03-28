@@ -142,7 +142,7 @@ const Nav = () => {
           )}
         </NavItem>
         <NavItem>
-          <NavLink to='/cart' onClick={closeMenu}>
+          <NavLink to='/E-Commerce/cart' onClick={closeMenu}>
             <FontAwesomeIcon icon={faCartShopping} />
             {totalQuantity > 0 && <CartItemCount>{totalQuantity}</CartItemCount>}
           </NavLink>
@@ -176,7 +176,7 @@ const Nav = () => {
               )}
             </MobileMenuItem>
             <MobileMenuItem>
-              <NavLink to='/cart' onClick={closeMenu}>
+              <NavLink to='/E-Commerce/cart' onClick={closeMenu}>
                 <FontAwesomeIcon icon={faCartShopping} />
                 {totalQuantity > 0 && <CartItemCount>{totalQuantity}</CartItemCount>}
               </NavLink>
