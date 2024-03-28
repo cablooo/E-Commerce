@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/E-Commerce/static/css/main.515bd287.css",
+    "main.js": "/E-Commerce/static/js/main.8412cbd4.js",
+    "static/js/453.76be7bad.chunk.js": "/E-Commerce/static/js/453.76be7bad.chunk.js",
+    "static/media/pexels-mq-huang-6623763.jpg": "/E-Commerce/static/media/pexels-mq-huang-6623763.bf67fa6946f940277889.jpg",
+    "static/media/pexels-ali-dashti-16923479.jpg": "/E-Commerce/static/media/pexels-ali-dashti-16923479.25f069e812c142f4d8b4.jpg",
+    "static/media/pexels-đặng-thanh-tú-5693889.jpg": "/E-Commerce/static/media/pexels-đặng-thanh-tú-5693889.c175fd86939f8e560aeb.jpg",
+    "static/media/pexels-đặng-thanh-tú-5693891.jpg": "/E-Commerce/static/media/pexels-đặng-thanh-tú-5693891.d04628d13ac7c390abb9.jpg",
+    "static/media/pexels-pavel-danilyuk-8000624.jpg": "/E-Commerce/static/media/pexels-pavel-danilyuk-8000624.31c7acbce95ff09d0652.jpg",
+    "static/media/pexels-brett-jordan-2643698.jpg": "/E-Commerce/static/media/pexels-brett-jordan-2643698.9ec3b8f596aaa8be0ea3.jpg",
+    "static/media/pexels-irina-iriser-1647978.jpg": "/E-Commerce/static/media/pexels-irina-iriser-1647978.56a15777601ca57fb935.jpg",
+    "static/media/pexels-cristiano-de-luca-10963373.jpg": "/E-Commerce/static/media/pexels-cristiano-de-luca-10963373.ee5e4afd6f99353547a8.jpg",
+    "static/media/pexels-displaced-by-design-8612668.jpg": "/E-Commerce/static/media/pexels-displaced-by-design-8612668.84e27c9818189c753aca.jpg",
+    "static/media/pexels-quang-viet-nguyen-12835320.jpg": "/E-Commerce/static/media/pexels-quang-viet-nguyen-12835320.9a9d050f34af44c8bd73.jpg",
+    "static/media/pexels-vvs-™-8839887.jpg": "/E-Commerce/static/media/pexels-vvs-™-8839887.a40a7a66a200c92ebd11.jpg",
+    "static/media/pexels-fahmi-garna-13094233.jpg": "/E-Commerce/static/media/pexels-fahmi-garna-13094233.7e652af8a340bbcffd8a.jpg",
+    "static/media/pexels-lappen-fashion-4296075.jpg": "/E-Commerce/static/media/pexels-lappen-fashion-4296075.5dba2463a62bbc8f337b.jpg",
+    "static/media/pexels-alexa-kei-8219211.jpg": "/E-Commerce/static/media/pexels-alexa-kei-8219211.fdd7ccb2f2160fc3fb2f.jpg",
+    "static/media/pexels-mart-production-8801123.jpg": "/E-Commerce/static/media/pexels-mart-production-8801123.b97d5a692f963b07bca0.jpg",
+    "static/media/pexels-esmihel-muhammad-18311171.jpg": "/E-Commerce/static/media/pexels-esmihel-muhammad-18311171.46fa2023820248354ca7.jpg",
+    "static/media/pexels-daniel-sperindeo-16958879.jpg": "/E-Commerce/static/media/pexels-daniel-sperindeo-16958879.2508d130f1c080b7fa36.jpg",
+    "static/media/pexels-sound-on-3394650.jpg": "/E-Commerce/static/media/pexels-sound-on-3394650.86c1e6eed97b92fadc3d.jpg",
+    "static/media/slick.svg": "/E-Commerce/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/E-Commerce/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/E-Commerce/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/E-Commerce/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/E-Commerce/index.html",
+    "main.515bd287.css.map": "/E-Commerce/static/css/main.515bd287.css.map",
+    "main.8412cbd4.js.map": "/E-Commerce/static/js/main.8412cbd4.js.map",
+    "453.76be7bad.chunk.js.map": "/E-Commerce/static/js/453.76be7bad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.515bd287.css",
+    "static/js/main.8412cbd4.js"
+  ]
+}
