@@ -118,7 +118,7 @@ const Products = () => {
     if (isSignedIn) {
       dispatch(addItemToCart(product));
     } else {
-      history('/signin');
+      history('/E-Commerce/signin');
     }
   };
 
@@ -156,7 +156,7 @@ const Products = () => {
       <ProductsContainer>
         {filteredProducts.map((product, i) => (
           <ProductCard key={`product-${i}`} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link to={`/E-Commerce/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
               <motion.img
                 src={product.src}
                 alt={product.name}

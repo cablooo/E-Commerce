@@ -43,12 +43,12 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/E-Commerce" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/product/:id" element={<ProductDetails />} />
-          <Route path="/signin" element={<SignIn closeModal={closeSignInModal} />} />
-          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/E-Commerce/products" element={<Products />} />
+          <Route path="/E-Commerce/contact" element={<Contact />} />
+          <Route path="/E-Commerce/cart" element={<Cart />} />
+          <Route path="/E-Commerce/product/:id" element={<ProductDetails />} />
+          <Route path="/E-Commerce/signin" element={<SignIn closeModal={closeSignInModal} />} />
+          <Route path="/E-Commerce/checkout" element={<CheckoutPage />} />
         </Routes>
         {isSignedIn && <div></div>}
         {isSignInModalOpen && <SignIn closeModal={closeSignInModal} />}

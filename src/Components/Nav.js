@@ -129,16 +129,16 @@ const Nav = () => {
           <NavLink to="/E-Commerce" onClick={closeMenu}>Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/products" onClick={closeMenu}>Products</NavLink>
+          <NavLink to="/E-Commerce/products" onClick={closeMenu}>Products</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+          <NavLink to="/E-Commerce/contact" onClick={closeMenu}>Contact</NavLink>
         </NavItem>
         <NavItem>
           {isSignedIn ? (
-            <SignInButton to='/signin' isSignedIn={isSignedIn} onClick={handleSignOut}>Sign Out</SignInButton>
+            <SignInButton to='/E-Commerce/signin' isSignedIn={isSignedIn} onClick={handleSignOut}>Sign Out</SignInButton>
           ) : (
-            <SignInButton to='/signin' isSignedIn={isSignedIn}>Sign In</SignInButton>
+            <SignInButton to='/E-Commerce/signin' isSignedIn={isSignedIn}>Sign In</SignInButton>
           )}
         </NavItem>
         <NavItem>
@@ -160,19 +160,19 @@ const Nav = () => {
           <CloseIcon icon={faTimes} size="lg" onClick={() => setMenuOpen(false)} />
           <MobileMenuList>
             <MobileMenuItem>
-              <NavLink to="/" onClick={closeMenu}>Home</NavLink>
+              <NavLink to="/E-Commerce" onClick={closeMenu}>Home</NavLink>
             </MobileMenuItem>
             <MobileMenuItem>
-              <NavLink to="/products" onClick={closeMenu}>Products</NavLink>
+              <NavLink to="/E-Commerce/products" onClick={closeMenu}>Products</NavLink>
             </MobileMenuItem>
             <MobileMenuItem>
-              <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+              <NavLink to="/E-Commerce/contact" onClick={closeMenu}>Contact</NavLink>
             </MobileMenuItem>
             <MobileMenuItem>
               {isSignedIn ? (
-                <SignInButton to='/signin' isSignedIn={isSignedIn} onClick={handleSignOut}>Sign Out</SignInButton>
+                <SignInButton to='/E-Commerce/signin' isSignedIn={isSignedIn} onClick={handleSignOut}>Sign Out</SignInButton>
               ) : (
-                <SignInButton to='/signin' isSignedIn={isSignedIn}>Sign In</SignInButton>
+                <SignInButton to='/E-Commerce/signin' isSignedIn={isSignedIn}>Sign In</SignInButton>
               )}
             </MobileMenuItem>
             <MobileMenuItem>

@@ -109,7 +109,7 @@ const Home = () => {
     >
       <StyledSlider {...settings}>
         {selectedProducts.map((product, index) => (
-          <Link key={index} to={`/product/${product.id}`}>
+          <Link key={index} to={`/E-Commerce/product/${product.id}`}>
             <img src={product.src} alt={product.name} />
           </Link>
         ))}

@@ -106,7 +106,7 @@ const ProductDetails = () => {
     if (isAuthenticated) {
       dispatch(addItemToCart({ ...product, quantity }));
     } else {
-      navigate('/signin'); // Navigate to sign-in page
+      navigate('/E-Commerce/signin'); // Navigate to sign-in page
     }
   };
 
