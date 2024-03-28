@@ -126,7 +126,7 @@ const Nav = () => {
     <NavContainer>
       <NavList>
         <NavItem>
-          <NavLink to="/" onClick={closeMenu}>Home</NavLink>
+          <NavLink to="/E-Commerce" onClick={closeMenu}>Home</NavLink>
         </NavItem>
         <NavItem>
           <NavLink to="/products" onClick={closeMenu}>Products</NavLink>
