@@ -1,7 +1,7 @@
-// SignIn.js
+// SignUp.js
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { useNavigate, Link } from 'react-router-dom'; // Import useHistory and Link from React Router
+import { useNavigate } from 'react-router-dom';
 import app from '../firebase';
 
 const ModalBackground = styled.div`
@@ -29,7 +29,7 @@ const Title = styled.h2`
   margin-bottom: 20px;
 `;
 
-const SignInForm = styled.form`
+const SignUpForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,30 +62,22 @@ const ErrorMessage = styled.div`
   margin-top: 10px;
 `;
 
-const SignUpLink = styled(Link)`
-  color: #007bff;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
-const SignIn = ({ closeModal }) => {
+const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
-  const history = useNavigate(); // Initialize useHistory
+  const history = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       setError(null);
-      closeModal();
 
+      await app.auth().createUserWithEmailAndPassword(email, password);
+      // Optionally, you can automatically sign in the user after sign-up
       await app.auth().signInWithEmailAndPassword(email, password);
 
-      // Navigate to the products page after successful sign-in
+      // Navigate to the products page after successful sign-up and sign-in
       history('/E-Commerce/products');
       window.location.reload();
     } catch (error) {
@@ -94,10 +86,10 @@ const SignIn = ({ closeModal }) => {
   };
 
   return (
-    <ModalBackground onClick={closeModal}>
-      <ModalContent onClick={(e) => e.stopPropagation()}>
-        <Title>Sign In</Title>
-        <SignInForm onSubmit={handleSubmit}>
+    <ModalBackground>
+      <ModalContent>
+        <Title>Sign Up</Title>
+        <SignUpForm onSubmit={handleSubmit}>
           <Input
             type="email"
             placeholder="Email"
@@ -110,15 +102,12 @@ const SignIn = ({ closeModal }) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button type="submit">Sign In</Button>
+          <Button type="submit">Sign Up</Button>
           {error && <ErrorMessage>{error}</ErrorMessage>}
-        </SignInForm>
-        <p>
-          Don't have an account? <SignUpLink to="/E-Commerce/signup">Create a new one</SignUpLink>
-        </p>
+        </SignUpForm>
       </ModalContent>
     </ModalBackground>
   );
 };
 
-export default SignIn;
+export default SignUp;

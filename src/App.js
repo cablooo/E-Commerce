@@ -11,6 +11,7 @@ import Cart from './Pages/Cart';
 import ProductDetails from './Pages/ProductDetails';
 import GlobalStyle from './Components/GlobalStyles';
 import SignIn from './Pages/SignIn';
+import SignUp from './Pages/SignUp'; // Import SignUp component
 import Checkout from './Pages/Checkout';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Route path="/E-Commerce/cart" element={<Cart />} />
           <Route path="/E-Commerce/product/:id" element={<ProductDetails />} />
           <Route path="/E-Commerce/signin" element={<SignIn closeModal={closeSignInModal} />} />
+          <Route path="/E-Commerce/signup" element={<SignUp />} /> {/* Add SignUp route */}
           <Route path="/E-Commerce/checkout" element={<CheckoutPage />} />
         </Routes>
         {isSignedIn && <div></div>}
